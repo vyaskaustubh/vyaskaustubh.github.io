@@ -1,2 +1,0 @@
-# Kaustubh Vyas
-Personal Webpage

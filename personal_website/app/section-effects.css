@@ -1,0 +1,20 @@
+.section-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dark .section-container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Add this to globals.css */
+@media (prefers-reduced-motion) {
+  .section-container:hover {
+    transform: none;
+  }
+}
